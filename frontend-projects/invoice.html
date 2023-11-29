@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Dynamic Invoice</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.5/html2pdf.bundle.js"></script>
+</head>
+<body>
+  <div id="invoice">
+    <div id="header">
+      <h2 id="company-name">Your Company Name</h2>
+      <img src="https://cdn4.vectorstock.com/i/1000x1000/62/53/xyz-logo-letter-letter-logo-design-vector-41726253.jpg" alt="company logo"
+      <p id="due-date">Due Date: December 31, 2023</p>
+      <h1>Invoice</h1>
+      <p id="invoice-number">Invoice #123</p>
+    </div>
+    <div id="details">
+      <div>
+        <label for="client">Client:</label>
+        <input type="text" id="client" placeholder="Client Name">
+      </div>
+      <div>
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="invoice-items">
+        <!-- Invoice items will be dynamically added here -->
+      </tbody>
+    </table>
+    <div id="totals">
+      <p>Subtotal: $<span id="subtotal">0.00</span></p>
+      <p>Tax (10%): $<span id="tax">0.00</span></p>
+      <p>Discount: $<span id="discount">0.00</span></p>
+      <p>Total: $<span id="total">0.00</span></p>
+    </div>
+
+    <!-- Add Item and Generate PDF buttons -->
+    <button id="add-item">Add Item</button>
+    <button id="generate-pdf">Generate PDF</button>
+    
+    
+<!-- for payment-->
+
+<div id="payment">
+  <label for="payment-method">Payment Method:</label>
+  <select id="payment-method">
+    <option value="credit-card">Credit Card</option>
+    <option value="bank-transfer">Bank Transfer</option>
+    <option value="paypal">PayPal</option>
+    <!-- Add more options as needed -->
+  </select>
+</div>
+
+<div id="thank-you">
+  <h3>Thank you for your business!</h3>
+</div>
+
+
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

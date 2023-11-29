@@ -1,0 +1,106 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+}
+
+#invoice {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+#header {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  background-color:lightblue;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+table {
+background-color: aqua;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+#totals {
+  text-align: right;
+}
+#add-item {
+    background-color:#3498db;
+    color: #ffffff;
+  }
+  
+  #generate-pdf {
+    background-color:#2ecc71;
+    color: #ffffff;
+  }
+  body {
+    background-color:#ecf0f1; 
+    color:#2c3e50;
+  }
+/* date button design*/
+  #date {
+    background: linear-gradient(to right, #3498db, #2ecc71); /* Gradient from blue to green */
+    color: #ffffff; /* Text color for better contrast */
+    padding: 5px; /* Adjust padding as needed */
+  }
+ img{
+       float:left;
+       height: 100px;
+       width: 100px;
+       border-radius:100%;
+}
+#payment-method {
+  margin-top: 20px; 
+  background-color: black;
+  color: white;
+}
+
+#payment {
+  margin-top: 20px; 
+}
+
+#thank-you {
+  margin-top: 20px;
+}
+
+button {
+  /* Existing button styles */
+  margin-top: 10px; 
+}
+#client {
+  background-color:lemonchiffon; /* Choose your desired background color */
+  color: #ffffff; /* Text color for better contrast */
+  padding: 10px;
+  margin-top: 10px; /* Add margin at the top of the input box */
+}
+
+
